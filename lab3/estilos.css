@@ -1,0 +1,82 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#menu:hover::before {content: ">";}
+#menu:hover::after {content: "<";}    
+
+nav{
+    text-align: center;
+    background-color: rgb(221, 219, 223);
+    padding: 15px 15px;
+    color: white;
+    margin-top: 3rem;    
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    background-color: rgb(173, 240, 225);
+    color: rgb(116, 115, 117);
+    font-size: 6rem;
+}
+
+.pos-relative img {
+    position: relative;
+    width: 100%;
+    top: 10px;   left: 10px;
+}
+
+
+.pos-absolute {
+    position: relative;
+    top: 10px; left: 10px;
+    font-size: 2rem;
+    color: rgb(241, 238, 245);
+  
+}
+
+.capitais {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(173, 240, 225);
+    padding: 50px
+}
+
+.capitais div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #535353;
+    margin: 10px;
+}
+
+.capitais div img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+
+.capitais div div:last-child {
+    width: 150px;
+    background-color: rgb(236, 232, 232);
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
